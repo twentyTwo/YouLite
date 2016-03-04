@@ -12,7 +12,6 @@ E:\Dropbox\My C# Projects\YouLite\YouLite\obj\Debug\YouLite.pdb
 E:\Dropbox\My C# Projects\YouLite\YouLite\bin\Debug\Interop.AXVLC.dll
 E:\Dropbox\My C# Projects\YouLite\YouLite\bin\Debug\AxInterop.AXVLC.dll
 E:\Dropbox\My C# Projects\YouLite\YouLite\obj\Debug\AxInterop.AXVLC.dll
-E:\Dropbox\My C# Projects\YouLite\YouLite\bin\Debug\ZYoutube.cs.dll
 E:\Dropbox\My C# Projects\YouLite\YouLite\bin\Debug\HtmlAgilityPack.dll
 E:\Dropbox\My C# Projects\YouLite\YouLite\bin\Debug\HtmlAgilityPack.pdb
 E:\Dropbox\My C# Projects\YouLite\YouLite\bin\Debug\HtmlAgilityPack.xml

@@ -34,6 +34,8 @@
             this.textUrl = new System.Windows.Forms.TextBox();
             this.playButton = new System.Windows.Forms.Button();
             this.currentlyPlaying = new System.Windows.Forms.Label();
+            this.queue = new System.Windows.Forms.Button();
+            this.playlist = new System.Windows.Forms.ListBox();
             ((System.ComponentModel.ISupportInitialize)(this.playVid)).BeginInit();
             this.SuspendLayout();
             // 
@@ -45,6 +47,8 @@
             this.playVid.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("playVid.OcxState")));
             this.playVid.Size = new System.Drawing.Size(440, 216);
             this.playVid.TabIndex = 0;
+            this.playVid.MediaPlayerEncounteredError += new System.EventHandler(this.playVid_MediaPlayerEncounteredError);
+            this.playVid.MediaPlayerEndReached += new System.EventHandler(this.playVid_MediaPlayerEndReached);
             // 
             // label1
             // 
@@ -82,11 +86,35 @@
             this.currentlyPlaying.Text = "Currently Playing: Nothing :(";
             this.currentlyPlaying.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
+            // queue
+            // 
+            this.queue.Location = new System.Drawing.Point(458, 10);
+            this.queue.Name = "queue";
+            this.queue.Size = new System.Drawing.Size(75, 23);
+            this.queue.TabIndex = 5;
+            this.queue.Text = "Queue";
+            this.queue.UseVisualStyleBackColor = true;
+            this.queue.Click += new System.EventHandler(this.queue_Click);
+            // 
+            // playlist
+            // 
+            this.playlist.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.playlist.FormattingEnabled = true;
+            this.playlist.HorizontalScrollbar = true;
+            this.playlist.ItemHeight = 20;
+            this.playlist.Location = new System.Drawing.Point(458, 45);
+            this.playlist.Name = "playlist";
+            this.playlist.Size = new System.Drawing.Size(228, 264);
+            this.playlist.TabIndex = 6;
+            this.playlist.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.playlist_MouseDoubleClick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(464, 321);
+            this.ClientSize = new System.Drawing.Size(698, 321);
+            this.Controls.Add(this.playlist);
+            this.Controls.Add(this.queue);
             this.Controls.Add(this.currentlyPlaying);
             this.Controls.Add(this.playButton);
             this.Controls.Add(this.textUrl);
@@ -108,6 +136,8 @@
         private System.Windows.Forms.TextBox textUrl;
         private System.Windows.Forms.Button playButton;
         private System.Windows.Forms.Label currentlyPlaying;
+        private System.Windows.Forms.Button queue;
+        private System.Windows.Forms.ListBox playlist;
     }
 }
 

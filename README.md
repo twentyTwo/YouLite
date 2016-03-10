@@ -10,7 +10,9 @@ I hope to add a YouTube browser so you can get videos directly from their API, r
 ##Installation
 
 Step 1. Setup your preferred stack (XAMPP, WAMP, LAMP) and run Apache.
+
 Step 2. Move the 'youtube' folder to your documentroot *It must stay in the folder, dont rename the folder either!*
+
 Step 3. Run the exe in the debug, or install it to your system and with any luck it should work.
 
 If it doesn't work make sure you have all needed dependancies! You need to install PHP cURL for this to work.
